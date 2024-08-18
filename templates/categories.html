@@ -24,8 +24,8 @@
     <div class="Add">
         <form method="POST" action="{{ url_for('add_category', admin_id=admin.id) }}" class="add_category_form">
             <label for="category">Category Name:</label>
+            <input type="text" id="category" name="name" required>
             <div class="category_input">
-                <input type="text" id="category" name="name" required>
                 <label for="group">Group:</label>
                 <select id="group" name="group_id">
                     <option value="">None</option>
