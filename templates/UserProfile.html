@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<!-- this if for logout button -->
+<body>
+    <div class="logout">
+        </div>
+        <h1 class="title">User Profile</h1>
+        <a href="{{ url_for('logout') }}" class="LogOutButton">Logout</a>
+    </div>
+<!-- this is for press the button and change to the url -->
+    <div class="classification">
+        <ul>
+            <li><a href="{{ url_for('browse_items', user_id=user.id) }}" class="browse_items">Browse Items</a></li>
+            <li><a href="{{ url_for('favourite_item', user_id=user.id)}}" class="favourite_items">Favourited Items</a></li>
+            <li><a href="{{ url_for('items_upload', user_id=user.id) }}" class="items_upload">Items Upload</a></li>
+            <li><a href="{{ url_for('view_notifications', user_id=user.id) }}" class="view_notifications">View Notifications</a></li>
+            <li><a href="{{ url_for('user_profile', user_id=user.id) }}" class="user_profile">User Profile</a></li>
+        </ul>
+    </div>
+<!-- this is for user profile -->
+    <div class="profile">
+        <div class="profile-info">
+            <h1><strong>NAME:</strong> {{ user.name }}</h1>
+            <h1><strong>EMAIL:</strong> {{ user.email }}</h1>
+            <h1><strong>USERNAME:</strong> {{ user.username }}</h1>
+            <h1><strong>PhoneNumber:</strong> {{ user.PhoneNumber }}</h1>
+            <h1><strong>JOINED:</strong> {{ user.created_at }}</h1>
+            <a href="{{ url_for('edit_profile', user_id=user.id) }}" class="edit_profile">Edit Profile</a>
+        </div>
+    </div>
+</body>
+</html>

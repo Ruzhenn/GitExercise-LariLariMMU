@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="body">
+    <div class="head">
+        <h1 class="title">Sign Up</h1>
+        <a href="/" class="MainButton">Return to Main</a>
+    </div>
+      
+    <div class="user_sign_up">
+      <form method="post" action="{{ url_for('signup') }}">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Name" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" required>
+          <label for="username">Username</label>
+          <input type="text" name="username" placeholder="Username" required>
+          <label for="phone_number">Phone Number</label>
+          <input type="number" name="phone_number" placeholder="Phone_Number" required>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+</body>
+</html>

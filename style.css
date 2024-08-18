@@ -1,7 +1,7 @@
 /* Custom styles for the submit_product */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #b1e3c9fd;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -10,3 +10,4 @@ body {
     align-items: center;
     height: 100vh;
 }
+
