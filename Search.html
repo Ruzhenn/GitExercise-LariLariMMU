@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <body>
+<!------------------------------------------------------------ Let User To Search ----------------------------------------------------------------------------->
         <div class="search-bar">
             <form method="GET" action="{{ url_for('manage_users', admin_id=admin.id) }}">
-                <input type="text" name="search_query" placeholder="Search for a user..." value="{{ request.args.get('search_query', '') }}">
+                <input type="text" name="search_query" placeholder="Search for a user..." value="{{ search_query }}">
                 <button type="submit">Search</button>
             </form>
         </div>
