@@ -1,0 +1,8 @@
+/* ---------------------------------------------------------------search css--------------------------------------------------------------------------------- */
+.search_bar input[type="text"] {
+    font-family: 'Bebas Neue', sans-serif; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
