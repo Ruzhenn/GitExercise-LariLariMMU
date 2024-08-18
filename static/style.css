@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(mainbg.jpg);
+    background-image: url("https://img.freepik.com/free-photo/digital-art-beautiful-mountains_23-2151123686.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
