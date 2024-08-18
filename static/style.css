@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ---------------------------------------------------------------search--------------------------------------------------------------------------------- */
 
 
@@ -49,12 +50,21 @@ body{
     background-attachment: fixed;
 }
 .wrapper{
+=======
+/* Custom styles for the submit_product */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c9e0d4fd;
+    color: #253147;
+    margin: 0;
+    padding: 0 ;
+>>>>>>> b83a38430687e9fb723db7c40ae4d2bcfac50e20
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 110vh;
-    background: rgba(0,0,0,0.04);   
+    height: 100vh;
 }
+<<<<<<< HEAD
 .nav{
     position: fixed;
     top:0;
@@ -87,3 +97,6 @@ body{
 .link:hover{
     border-bottom: 2px solid#fff;
 }
+=======
+
+>>>>>>> b83a38430687e9fb723db7c40ae4d2bcfac50e20

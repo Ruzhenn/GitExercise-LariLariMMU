@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submit Product</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    
+    <h2 class="heading">Submit a New Product</h2>
+    <form method="post" enctype="multipart/form-data">
+        <p><label for="title">Product Name:</label></p>
+        <input type="text" id="title" name="title" required>
+
+        <p><label for="description">Description:</label></p>
+        <textarea id="description" name="description" required></textarea>
+
+        <p><label for="price">Price:</label></p>
+        <input type="number" step="1.00" id="price" name="price" required>
+
+        <p></p><label for="quantity">Quantity:</label></p>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <p></p><label for="condition">Condition:</label></p>
+        <select id="condition" name="condition" required>
+            <option value="New">New</option>
+            <option value="Like New">Like New</option>
+            <option value="Good">Good</option>
+            <option vaue="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+        
+        <p></p><label for="category_id">Category:</label></p>
+        <select id="category_id" name="category_id" required>
+            {% for category in categories %}
+                <option value="{{ category.id}}">{{ category.name }}</option>
+            {% endfor %}
+        </select>
+
+        <p></p><label for="file">Image:</label></p>
+        <input type="file" id="file" name="file" >
+
+        <p><button type="submit">Submit Product</button></p>
+    
+</body>
+</html>
