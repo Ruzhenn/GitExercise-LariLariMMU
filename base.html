@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>{% block title %}Product Page{% endblock %}</title>
+   <link rel="stylesheet" href="{{url_for('static', filename='styles.css') }}">
+</head>
+<body>
+   <header>
+      <h1>Product Page</h1>
+   </header>
+   <main>
+       {% block content %}{% endblock %}  
+       #default content goes here
+   </main>
+</body>
+</html>
