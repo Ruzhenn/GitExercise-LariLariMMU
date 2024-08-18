@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Lari Lari MMU | Login & Signup</title>
+        <link href="link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css " rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper"></div>
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LARI LARI MMU ^-^</p>
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="UserSetting.html">USER</a></li>
+                    <li><a href="admin.html">ADMIN</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="myacc.html">MY ACCOUNT</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" id="loginBtn">Log In</button>
+                <button class="btn" id="signupBtn">Sign up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+<!-----------------------------------------formbox----------------------------------------------->  
+    <div class="form-box">
+        <!-----------------------registerform---------------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                    <span>Have an account?<a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+            </div>
+        <div class="two-forms">
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Fristname">
+                <i class="bx bx-user"></i>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Lastname">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <input type="checkbox" id="register-check">
+                <label for="register-check">Remind me</label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
