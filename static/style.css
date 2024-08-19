@@ -34,6 +34,22 @@
   font-size: 20px;
   color: darkturquoise;
 }
+
+/*------------------------------------------------------------Made by Alice--------------------------------------------------------------------------  */
+
+/* Custom styles for the submit_product */
+.heading {
+    font-family: Arial, sans-serif;
+    background-color: #c9e0d4fd;
+    color: #253147;
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
 /* ------------------------------------------------------------------Made by Ruzhen--------------------------------------------------------------------------- */
 *{
     margin:0;
@@ -84,19 +100,4 @@ body{
 }
 .link:hover{
     border-bottom: 2px solid#fff;
-}
-
-/*------------------------------------------------------------Made by Alice--------------------------------------------------------------------------  */
-
-/* Custom styles for the submit_product */
-.heading {
-    font-family: Arial, sans-serif;
-    background-color: #c9e0d4fd;
-    color: #253147;
-    margin: 0;
-    padding: 0 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
 }
